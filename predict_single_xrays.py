@@ -6,7 +6,11 @@ import os
 model_path = "resnet50_q90.h5"  # change to q70, q50, etc. if needed
 model = load_model(model_path)
 
+
 test_dir = "resnet_test_data"
+
+test_dir = "dataset/resnet_test_data"
+
 
 for label in ["fracture", "no_fracture"]:
     folder = os.path.join(test_dir, label)

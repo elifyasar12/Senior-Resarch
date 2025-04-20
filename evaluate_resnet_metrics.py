@@ -7,6 +7,9 @@ import os
 # === CONFIG ===
 model_path = "resnet50_q90.h5"
 dataset_path = "dataset/q90/valid"  # or any other test/valid set
+
+model_path = "resnet50_100.h5"  # or whatever your filename is
+dataset_path = "dataset/original/valid"
 image_size = (224, 224)
 batch_size = 8
 
