@@ -1,0 +1,6 @@
+venv*/
+*.h5
+*.dylib
+__pycache__/
+*.pyc
+.DS_Store
