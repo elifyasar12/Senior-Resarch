@@ -6,7 +6,8 @@ import cv2
 import os
 
 # === CONFIG ===
-model_path = "resnet50_q100.h5"
+model_path = "resnet50_original.h5"
+
 img_path = "dataset/resnet_test_data/fracture/Broken Bone 1.jpeg"  # Change this to test other images
 img_size = (224, 224)
 
