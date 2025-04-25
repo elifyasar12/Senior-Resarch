@@ -5,8 +5,8 @@ import numpy as np
 import os
 
 # === CONFIG ===
-model_path = "resnet50_q100.h5"
-dataset_path = "dataset/q100/valid"
+model_path = "resnet50_q90.h5"
+dataset_path = "dataset/q90/valid"
 image_size = (224, 224)
 batch_size = 8
 
