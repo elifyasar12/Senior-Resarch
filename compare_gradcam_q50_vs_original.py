@@ -43,7 +43,8 @@ def generate_gradcam(model_path, img_path):
 
     img_cv = cv2.imread(img_path)
     img_cv = cv2.resize(img_cv, img_size)
-    heatmap_resized = cv2.resize(heatmap.numpy(), img_size)
+    heatmap_resized = cv2.resize(heatmap, img_size)
+
     heatmap_colored = cv2.applyColorMap(np.uint8(255 * heatmap_resized), cv2.COLORMAP_JET)
     superimposed_img = cv2.addWeighted(img_cv, 0.6, heatmap_colored, 0.4, 0)
 
