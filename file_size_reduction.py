@@ -48,13 +48,15 @@ plt.figure(figsize=(6,4))
 bars = plt.bar(labels, avg_sizes)
 plt.ylabel("Average File Size (KB)")
 plt.xlabel("JPEG Quality")
-plt.title("Average X-ray File Size by JPEG Compression Level")
+plt.title("Average X-ray Image File Size at Different JPEG Compression Levels")
 
-# annotate bars
+# annotate bars with file sizes
 for bar in bars:
     h = bar.get_height()
     plt.text(bar.get_x() + bar.get_width()/2, h + 1, f"{h:.1f} KB",
              ha='center', va='bottom', fontsize=9)
 
-plt.tight_layout()
+# Adjust layout to avoid overlap between title and bar labels
+plt.tight_layout(pad=3.0)
+
 plt.show()
